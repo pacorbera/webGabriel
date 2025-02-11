@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Lista de Compra - List & Save</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="assets/images/logo.svg" alt="List & Save Logo" class="header__logo-img">
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link">Inicio</a></li>
+                    <li class="nav__item"><a href="./mi-lista.html" class="nav__link nav__link--active">Mi lista</a></li>
+                    <li class="nav__item"><a href="./comparador.html" class="nav__link">Comparador</a></li>
+                    <li class="nav__item"><a href="./productos.html" class="nav__link">Productos</a></li>
+                    <li class="nav__item"><a href="./nosotros.html" class="nav__link">Nosotros</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="login.html" class="button button--secondary">Iniciar Sesión</a>
+                <a href="register.html" class="button button--primary">Registrarse</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="shopping-list">
+            <div class="list-controls">
+                <h1 class="list-title">Mi Lista de Compra</h1>
+                <div class="actions">
+                    <button class="button button--secondary">Nueva Lista</button>
+                    <button class="button button--primary">Guardar Lista</button>
+                </div>
+            </div>
+
+            <table class="shopping-table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Mejor Precio En</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Leche Entera</td>
+                        <td>2</td>
+                        <td class="best-price">Mercadona (0.89€)</td>
+                        <td>
+                            <div class="actions">
+                                <button class="button button--secondary">Editar</button>
+                                <button class="button button--secondary">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pan de Molde</td>
+                        <td>1</td>
+                        <td class="best-price">Lidl (1.19€)</td>
+                        <td>
+                            <div class="actions">
+                                <button class="button button--secondary">Editar</button>
+                                <button class="button button--secondary">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Huevos</td>
+                        <td>1</td>
+                        <td class="best-price">Carrefour (1.99€)</td>
+                        <td>
+                            <div class="actions">
+                                <button class="button button--secondary">Editar</button>
+                                <button class="button button--secondary">Eliminar</button>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="add-item">
+                <input type="text" placeholder="Añadir nuevo producto...">
+                <button class="button button--primary">Añadir</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <div class="footer__logo">
+                    <img src="assets/images/logo.svg" alt="List & Save Logo">
+                </div>
+                <p class="footer__description">
+                    La mejor plataforma para comparar precios y ahorrar en tus compras del supermercado.
+                </p>
+            </div>
+            
+            <div class="footer__column">
+                <h4 class="footer__title">Enlaces rápidos</h4>
+                <ul class="footer__list">
+                    <li><a href="./nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__column">
+                <h4 class="footer__title">Legal</h4>
+                <ul class="footer__list">
+                    <li><a href="./privacidad.html">Política de privacidad</a></li>
+                    <li><a href="./terminos.html">Términos y condiciones</a></li>
+                    <li><a href="./cookies.html">Política de cookies</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer__column">
+                <h4 class="footer__title">Síguenos</h4>
+                <div class="footer__social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="footer__contact">
+                    Email: info@listandsave.com<br>
+                    Tel: +34 900 123 456
+                </p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 List & Save. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html> 

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - List & Save</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="assets/images/logo.svg" alt="List & Save Logo" class="header__logo-img">
+            </a>
+            <a href="/" class="button button--primary">Volver al inicio</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="form-wrapper">
+            <div class="form-container">
+                <h1 class="form__title">Crear una cuenta</h1>
+                
+                <div class="form__progress">
+                    <div class="progress__step progress__step--active" data-step="1">
+                        <div class="progress__indicator">
+                            <div class="progress__circle"></div>
+                            <div class="progress__line">
+                                <div class="progress__line-fill"></div>
+                            </div>
+                        </div>
+                        <span class="progress__label">Datos básicos</span>
+                    </div>
+                    <div class="progress__step" data-step="2">
+                        <div class="progress__indicator">
+                            <div class="progress__circle"></div>
+                            <div class="progress__line">
+                                <div class="progress__line-fill"></div>
+                            </div>
+                        </div>
+                        <span class="progress__label">Datos personales</span>
+                    </div>
+                    <div class="progress__step" data-step="3">
+                        <div class="progress__indicator">
+                            <div class="progress__circle"></div>
+                        </div>
+                        <span class="progress__label">Preferencias</span>
+                    </div>
+                </div>
+
+                <form class="form">
+                    <div class="form__step form__step--active" data-step="1">
+                        <div class="form__group">
+                            <label class="form__label">Nombre de usuario</label>
+                            <input type="text" name="username" class="form__input" placeholder="Mihai Gabriel">
+                            <span class="form__hint">Entre 4 y 16 caracteres, solo letras, números y guiones bajos</span>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Correo electrónico</label>
+                            <input type="email" name="email" class="form__input" placeholder="ejemplo@correo.com">
+                            <span class="form__hint">Introduce un correo electrónico válido</span>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Contraseña</label>
+                            <input type="password" name="password" class="form__input">
+                            <span class="form__hint">Mínimo 8 caracteres, al menos una letra y un número</span>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Confirmar contraseña</label>
+                            <input type="password" name="confirmPassword" class="form__input">
+                            <span class="form__hint">Repite la contraseña</span>
+                        </div>
+                    </div>
+
+                    <div class="form__step" data-step="2">
+                        <div class="form__group">
+                            <label class="form__label">Nombre completo</label>
+                            <input type="text" name="fullname" class="form__input">
+                            <span class="form__hint">Tu nombre y apellidos</span>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__label">Edad</label>
+                            <input type="number" name="age" class="form__input" min="18" max="120">
+                            <span class="form__hint">Debes ser mayor de edad</span>
+                        </div>
+                    </div>
+
+                    <div class="form__step" data-step="3">
+                        <div class="form__group">
+                            <label class="form__label">Categorías de interés</label>
+                            <div class="form__checkbox-group">
+                                <label class="form__checkbox-label">
+                                    <input type="checkbox" name="categories" value="alimentacion">
+                                    Alimentación
+                                </label>
+                                <label class="form__checkbox-label">
+                                    <input type="checkbox" name="categories" value="limpieza">
+                                    Limpieza
+                                </label>
+                                <label class="form__checkbox-label">
+                                    <input type="checkbox" name="categories" value="hogar">
+                                    Hogar
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__actions">
+                        <button type="button" class="form__button form__button--secondary" id="prevBtn">Anterior</button>
+                        <button type="button" class="form__button form__button--primary" id="nextBtn">Siguiente</button>
+                        <button type="submit" class="form__button form__button--primary" id="submitBtn" style="display: none;">Registrarse</button>
+                    </div>
+
+                    <div class="form__footer">
+                        <p>¿Ya tienes cuenta? <a href="login.html" class="form__link">Inicia sesión</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/register.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

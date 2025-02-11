@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List & Save - Encuentra los mejores precios</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <img src="assets/images/logo.svg" alt="List & Save Logo" class="header__logo-img">
+            </a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="/" class="nav__link nav__link--active">Inicio</a></li>
+                    <li class="nav__item"><a href="./mi-lista.html" class="nav__link">Mi lista</a></li>
+                    <li class="nav__item"><a href="./comparador.html" class="nav__link">Comparador</a></li>
+
+                    <li class="nav__item"><a href="./productos.html" class="nav__link">Productos</a></li>
+                    <li class="nav__item"><a href="./nosotros.html" class="nav__link">Nosotros</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="header__actions">
+                <a href="login.html" class="button button--secondary">Iniciar Sesión</a>
+                <a href="register.html" class="button button--primary">Registrarse</a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Encuentra los mejores precios</h1>
+                <p class="hero__subtitle">Compara precios de productos en diferentes supermercados en tiempo real</p>
+                <div class="search">
+                    <input type="text" class="search__input" placeholder="Busca un producto...">
+                    <button class="search__button button button--primary">Buscar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us">
+            <h2 class="section-title">¿Por qué usar List & Save?</h2>
+            <div class="features__container">
+                <div class="features__item">
+                    <div class="features__icon">💰</div>
+                    <h3 class="features__title">Ahorra Dinero</h3>
+                    <p class="features__text">Encuentra los mejores precios en diferentes supermercados</p>
+                </div>
+                <div class="features__item">
+                    <div class="features__icon">⏰</div>
+                    <h3 class="features__title">Ahorra Tiempo</h3>
+                    <p class="features__text">Compara precios sin visitar múltiples tiendas</p>
+                </div>
+                <div class="features__item">
+                    <div class="features__icon">📊</div>
+                    <h3 class="features__title">Precios Actualizados</h3>
+                    <p class="features__text">Información de precios en tiempo real</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stores">
+            <h2 class="section-title">Supermercados disponibles</h2>
+            <div class="stores__grid">
+                <div class="store-logo__wrapper">
+                    <img src="assets/images/mercadona.png" alt="Mercadona" class="store-logo">
+                </div>
+                <div class="store-logo__wrapper">
+                    <img src="assets/images/carrefour.svg" alt="Carrefour" class="store-logo">
+                </div>
+                <div class="store-logo__wrapper">
+                    <img src="assets/images/dia.png" alt="Dia" class="store-logo">
+                </div>
+                <div class="store-logo__wrapper">
+                    <img src="assets/images/lidl.png" alt="Lidl" class="store-logo">
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="sponsors">
+            <h2 class="section-title">Nuestros Sponsors</h2>
+            <div class="sponsors__slider">
+                <div class="sponsors__track">
+                    <div class="sponsors__group">
+                        <div class="sponsor-logo__wrapper">
+                            <img src="assets/images/redbull.png" alt="Red Bull">
+                        </div>
+                        <div class="sponsor-logo__wrapper">
+                            <img src="assets/images/adidas.png" alt="Adidas">
+                        </div>
+                        <div class="sponsor-logo__wrapper">
+                            <img src="assets/images/santander.png" alt="Santander">
+                        </div>
+                        <div class="sponsor-logo__wrapper">
+                            <img src="assets/images/bizum.png" alt="Bizum">
+                        </div>
+                        <div class="sponsor-logo__wrapper">
+                            <img src="assets/images/gobierno.png" alt="Gobierno de España">
+                        </div>
+                        <div class="sponsor-logo__wrapper">
+                            <img src="assets/images/burgerking.png" alt="Burger King">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <div class="cta__container">
+                <h2 class="cta__title">¿Listo para empezar a ahorrar?</h2>
+                <p class="cta__text">Crea tu lista de compra personalizada y descubre dónde conseguir los mejores precios</p>
+                <a href="./crear-lista.html" class="button button--large button--primary">Crear mi lista ahora</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__column">
+                <div class="footer__logo">
+                    <img src="assets/images/logo.svg" alt="List & Save Logo">
+                </div>
+                <p class="footer__description">
+                    La mejor plataforma para comparar precios y ahorrar en tus compras del supermercado.
+                </p>
+            </div>
+            
+            <div class="footer__column">
+                <h4 class="footer__title">Enlaces rápidos</h4>
+                <ul class="footer__list">
+                    <li><a href="./nosotros.html">Sobre nosotros</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="footer__column">
+                <h4 class="footer__title">Legal</h4>
+                <ul class="footer__list">
+                    <li><a href="./privacidad.html">Política de privacidad</a></li>
+                    <li><a href="./terminos.html">Términos y condiciones</a></li>
+                    <li><a href="./cookies.html">Política de cookies</a></li>
+
+                </ul>
+            </div>
+            
+            <div class="footer__column">
+                <h4 class="footer__title">Síguenos</h4>
+                <div class="footer__social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p class="footer__contact">
+                    Email: info@listandsave.com<br>
+                    Tel: +34 900 123 456
+                </p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2024 List & Save. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
